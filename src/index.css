@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#020617] text-white;
+}
+
+/* PANEL */
+.panel {
+  @apply bg-gradient-to-br from-[#0B1220] to-[#020617] border border-white/10 rounded-2xl backdrop-blur-xl;
+}
+
+/* SHADOW (CUSTOM — FIX FOR ERROR) */
+.glow-shadow {
+  box-shadow: 0 0 40px rgba(0, 255, 180, 0.05);
+}
+
+/* KPI VARIANTS */
+.glow-green {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(2, 6, 23, 0.9));
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.glow-yellow {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(2, 6, 23, 0.9));
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.glow-teal {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.2), rgba(2, 6, 23, 0.9));
+  border: 1px solid rgba(20, 184, 166, 0.3);
+}
+
+.glow-red {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(2, 6, 23, 0.9));
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
